@@ -7,7 +7,7 @@
 <div class="wrapper">
     <div class="content">
         <img src="{logo}" alt="Spotify Logo" class="logo"/>
-        <h1>EGP 0.00 for 3 months of Premium</h1>
+        <h1>0.01 € for 3 months of Premium</h1>
         <p>Enjoy ad-free music listening, offline playback, and more. Cancel anytime.</p>
         <div class="buttons">
             <Button element="a" variant="outline" href="https://www.spotify.com/" target="_blank"
