@@ -35,11 +35,21 @@
     max-width: 1200px;
     margin: 80px auto 0;
     align-items: center;
+    flex-direction: column;
+    @include breakpoint.up("md") {
+      flex-direction: row;
+
+    }
   }
 
   .cover {
     flex: 1;
-    margin-left: 20px;
+    margin-top: 40px;
+
+    @include breakpoint.up("md") {
+      margin-left: 20px;
+      margin-top: 0px;
+    }
 
     img {
       max-width: 100%;

@@ -2,7 +2,6 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { redirect } from '@sveltejs/kit';
 import pkce from 'pkce-gen';
 import { BASE_URL, SPOTIFY_APP_CLIENT_ID } from '$env/static/private';
-import { debug } from 'svelte/internal';
 
 const generateRandomString = (length: number) => {
 	let randomString = '';
