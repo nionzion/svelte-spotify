@@ -1,12 +1,15 @@
 <script lang="ts">
     import Button from "$lib/components/Button.svelte";
     import logo from "$assets/Spotify_Logo_RGB_White.png";
+    import logo_green from "$assets/Spotify_Logo_RGB_Green.png";
     import cover from "$assets/cover.png";
+    import {theme} from "$lib/stores/stores.js";
 </script>
 
 <div class="wrapper">
     <div class="content">
-        <img src="{logo}" alt="Spotify Logo" class="logo"/>
+        <img src={$theme === 'light' ? logo_green : logo} class="logo" alt="Spotify Logo"/>
+
         <h1>0.01 € for 3 months of Premium</h1>
         <p>Enjoy ad-free music listening, offline playback, and more. Cancel anytime.</p>
         <div class="buttons">

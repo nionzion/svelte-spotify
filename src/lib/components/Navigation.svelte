@@ -130,7 +130,10 @@
   .nav-content {
     z-index: 200;
     padding-right: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+    @include breakpoint.up("md") {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+
+    }
 
     .logo {
       max-width: 100%;
@@ -225,6 +228,7 @@
     }
 
     :global(.menu-button) {
+
       @include breakpoint.up("md") {
         display: none;
       }

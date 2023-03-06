@@ -32,12 +32,13 @@
         </div>
     {/if}
     <div id="content">
-
-        <div id="top-bar" bind:this={topBar}>
-            <div class="top-bar-bg" style:background-color="var(--header-color)" style:opacity={`${headerOpacity}`}>
+        {#if user}
+            <div id="top-bar" bind:this={topBar}>
+                <div class="top-bar-bg" style:background-color="var(--header-color)" style:opacity={`${headerOpacity}`}>
+                </div>
+                <Header/>
             </div>
-            <Header/>
-        </div>
+        {/if}
         <main id="main-content" class:logged-in={user}>
             <slot/>
 
