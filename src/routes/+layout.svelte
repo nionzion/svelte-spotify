@@ -21,7 +21,8 @@
 
 </script>
 <svelte:head>
-    <link rel="stylesheet" href={`src/styles/${$theme == 'dark' ? 'main' : 'light'}.scss`}/>
+    <!--    <link rel="stylesheet" href={`src/styles/${$theme == 'dark' ? 'main' : 'light'}.scss`}/>-->
+    <link rel="stylesheet" href="src/styles/main.scss"/>
 </svelte:head>
 <svelte:window bind:scrollY/>
 
