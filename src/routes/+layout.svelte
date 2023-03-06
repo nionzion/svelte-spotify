@@ -1,6 +1,6 @@
 <script lang="ts">
     import "modern-normalize/modern-normalize.css";
-    // import "../styles/main.scss";
+    import "../styles/main.scss";
     import type {LayoutData} from "./$types";
     import Navigation from "$lib/components/Navigation.svelte";
     import Header from "$lib/components/Header.svelte";
@@ -20,10 +20,10 @@
 
 
 </script>
-<svelte:head>
-    <!--    <link rel="stylesheet" href={`src/styles/${$theme == 'dark' ? 'main' : 'light'}.scss`}/>-->
-    <link rel="stylesheet" href="src/styles/main.scss"/>
-</svelte:head>
+<!--<svelte:head>-->
+<!--    <link rel="stylesheet" href={`src/styles/${$theme == 'dark' ? 'main' : 'light'}.scss`}/>-->
+<!--    <link rel="stylesheet" href="src/styles/main.scss"/>-->
+<!--</svelte:head>-->
 <svelte:window bind:scrollY/>
 
 <div id="main">
