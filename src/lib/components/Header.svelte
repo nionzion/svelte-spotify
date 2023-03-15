@@ -13,6 +13,7 @@
         ChevronLeft,
         ChevronRight
     } from "lucide-svelte";
+    import LogoutButton from "$lib/components/LogoutButton.svelte";
 
     function toggleTheme() {
         if ($theme == 'light') {
@@ -41,6 +42,7 @@
         <IconButton style="align-self: center; margin-right: 10px" on:click={toggleTheme} label="Toggle Theme"
                     icon={ $theme == 'light' ? Moon : Sun}/>
 
+        <LogoutButton/>
         <div id="profile-button">
             <button class="profile-button">
                 {#if user.images && user.images.length > 0}
@@ -101,9 +103,6 @@
       }
 
       .username {
-        @include breakpoint.down("sm") {
-          display: none;
-        }
       }
     }
   }

@@ -76,10 +76,10 @@
 
 <svelte:head>
     {#if !desktop && isMobileMenuOpen}
-        <style>
-            body {
-                overflow: hidden;
-            }
+        <style lang="scss">
+          body {
+            overflow: hidden;
+          }
         </style>
     {/if}
 </svelte:head>

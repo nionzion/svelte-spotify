@@ -26,6 +26,14 @@
 <!--</svelte:head>-->
 <svelte:window bind:scrollY/>
 
+<svelte:head>
+    <style>
+        #nprogress .bar {
+            background: green;
+        }
+    </style>
+</svelte:head>
+
 <div id="main">
     {#if user}
         <div id="sidebar">
@@ -40,7 +48,7 @@
                 <Header/>
             </div>
         {/if}
-        <main id="main-content" class:logged-in={user}>
+        <main id="main-content" class="max-h-" class:logged-in={user}>
             <slot/>
 
         </main>
